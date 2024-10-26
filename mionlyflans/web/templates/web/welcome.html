@@ -1,0 +1,23 @@
+<html>
+    <header>
+        <title>OnlyFlans</title>
+    </header>
+    <body>
+        {% extends "web/base.html" %}
+
+{% block title %}Bienvenido{% endblock %}
+
+{% block content %}
+    <div class="container my-4">
+        <h2 class="text-center">
+            {% if usuario %}
+                Bienvenido, {{ usuario.nombre }}!
+            {% else %}
+                Bienvenido, cliente!
+            {% endif %}
+        </h2>
+    </div>    
+{% endblock %}
+
+    </body>
+</html>

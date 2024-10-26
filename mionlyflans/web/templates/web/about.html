@@ -1,0 +1,26 @@
+<html>
+    <header>
+        <title>OnlyFlans</title>
+    </header>
+    <body>
+        {% extends "web/base.html" %}
+
+        {% block title %}Acerca{% endblock %}
+        
+        {% block content %}
+        <div class="alert" role="alert" style="background-color: rgb(240, 58, 185); color: white;">
+            <h2 class="text-center">Acerca de Nosotros</h2>
+            </div>
+            <div class="container my-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p><strong>OnlyFlans:</strong> {{ datos_empresa.descripcion }}</p>
+                        <p><strong>Fecha de creación:</strong> {{ datos_empresa.fecha_creacion }}</p>
+                        <p><strong>Ubicación:</strong> {{ datos_empresa.ubicacion }}</p>
+                    </div>
+                </div>
+            </div>    
+        {% endblock %}
+        
+    </body>
+</html>

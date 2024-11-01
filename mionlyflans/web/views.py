@@ -4,6 +4,8 @@ from django.http import HttpResponseRedirect
 from .forms import ContactFormModelForm
 from .models import ContactForm
 from django.urls import reverse
+from django.contrib.auth.decorators import login_required
+
 
 
 # Create your views here.
@@ -41,3 +43,7 @@ def contacto(request):
 
 def exito(request):
     return render(request, 'web/exito.html')
+
+@login_required
+def welcome(request):
+    return render(request, 'web/welcome.html')

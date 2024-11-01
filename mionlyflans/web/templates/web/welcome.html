@@ -7,7 +7,10 @@
 
 {% block title %}Bienvenido{% endblock %}
 
+
 {% block content %}
+<h1>Bienvenido {{ user.get_username }}</h1>
+
 <div class="container my-4">
     <h2 class="text-center">Flanes Exclusivos</h2>
     <div class="row">

@@ -8,15 +8,22 @@
 {% block title %}Bienvenido{% endblock %}
 
 {% block content %}
-    <div class="container my-4">
-        <h2 class="text-center">
-            {% if usuario %}
-                Bienvenido, {{ usuario.nombre }}!
-            {% else %}
-                Bienvenido, cliente!
-            {% endif %}
-        </h2>
-    </div>    
+<div class="container my-4">
+    <h2 class="text-center">Flanes Exclusivos</h2>
+    <div class="row">
+        {% for flan in flanes %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ flan.name }}</h5>
+                        <p class="card-text">{{ flan.description }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}
 
     </body>

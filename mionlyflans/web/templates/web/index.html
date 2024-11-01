@@ -8,28 +8,23 @@
 {% block title %}Índice{% endblock %}
 
 {% block content %}
-{% load static %}
 <div class="container my-4">
-    <h2 class="text-center mb-4">Productos Disponibles</h2>
+    <h2 class="text-center">Productos Disponibles</h2>
     <div class="row">
-        {% for producto in productos %}
-            <div class="col-12 col-md-6 col-lg-4 mb-4">
-                <div class="card h-100 shadow-sm">
-                    <img src="{% static producto.imagen %}" class="card-img-top" alt="{{ producto.nombre }}">
+        {% for flan in flanes %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
                     <div class="card-body">
-                        <h5 class="card-title">{{ producto.nombre }}</h5>
-                        <p class="card-text">{{ producto.descripcion }}</p>
-                        <p class="card-text"><strong>{{ producto.precio }}</strong></p>
-                        <a href="#" class="btn btn-primary">Ver más</a>
+                        <h5 class="card-title">{{ flan.name }}</h5>
+                        <p class="card-text">{{ flan.description }}</p>
+                        <p class="card-text"><strong>{{ flan.precio }}</strong></p>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
 </div>
-
-
-
 {% endblock %}
 
     </body>

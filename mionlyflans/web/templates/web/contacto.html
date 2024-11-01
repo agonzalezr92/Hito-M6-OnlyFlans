@@ -1,0 +1,25 @@
+{% extends "web/base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<div class="container my-4">
+    <h2 class="text-center">Formulario de Contacto</h2>
+    <form method="post" action="{% url 'contacto' %}">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.customer_name.label_tag }} {{ form.customer_name }}
+            {{ form.customer_name.errors }}
+        </div>
+        <div class="form-group">
+            {{ form.customer_email.label_tag }} {{ form.customer_email }}
+            {{ form.customer_email.errors }}
+        </div>
+        <div class="form-group">
+            {{ form.message.label_tag }} {{ form.message }}
+            {{ form.message.errors }}
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+{% endblock %}

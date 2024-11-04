@@ -30,6 +30,7 @@ Estas ventajas ahorran tiempo y facilitan el acceso a opciones de postres único
 Aquí hay algunas capturas de pantalla que muestran el funcionamiento de la plataforma:
 
     Página de Inicio
+    ![Página de Inicio](Screen web/Pagina de Inicio.png)
 
     Página de Bienvenida para Usuarios Registrados
 

@@ -27,16 +27,17 @@ Estas ventajas ahorran tiempo y facilitan el acceso a opciones de postres único
 
 ##  Capturas de Pantalla
 
-Aquí hay algunas capturas de pantalla que muestran el funcionamiento de la plataforma:
+En la carpeta Screen Web podrá visualizar algunas capturas de pantalla que muestran el funcionamiento de la plataforma:
 
     Página de Inicio
-    ![Página de Inicio](Screen web/Pagina de Inicio.png)
 
     Página de Bienvenida para Usuarios Registrados
 
     Formulario de Contacto
 
-    Panel de Administración de Usuarios
+    Registro de Usuarios
+
+    Otros 
 
 ##  Cierre y Llamado a la Acción
 
